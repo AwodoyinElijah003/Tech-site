@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* 
+.genLayout{
+    max-width: 100%;
+    margin: auto;
+} */
+
+.navInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    height: 4rem;
+    gap: 28rem;
+    padding-left: 3.9rem;
+    color: white;
+}
+
+.navInfo>.leftInfo{
+    display: flex;
+    gap: 15px;
+    padding-left: 2rem;
+}
+
+.navInfo>.rightInfo{
+    padding-right: 100px;
+    display: flex;
+    gap: 19px;
+}
+
+.navInfo>.rightInfo>span{
+    font-size: 14px;
+    padding-right: .2rem;
+}
+
+nav{
+    background-color: white;
+    width: 100%;
+    height: 1rem;
+}
+
+.navWrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 10px 10px;
+}
+
+.navWrapper>img{
+    height: 70px;
+}
+
+.navWrapper>.navLeft{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.navLeft>.navItems>p{
+    padding-inline: 11px;
+    display: inline;
+    text-transform: capitalize;
+    font-weight: 700;
+    opacity: .7;
+}
+
+.secOne{
+    flex: 1;
+    background-image: url(./images/ContactImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 91px;
+    height: 250px;
+}
+
+.secOne>.contactImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secOne>.contactImg>p{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    top: 99px;
+}
+
+.secTwo{
+    position: relative;
+    top: 100px;
+}
+
+.secTwo>.secTwoLayout{
+    height: 592px;
+    margin-block: 35px;
+    margin-inline: auto;
+    display: flex;
+}
+
+
+.secTwo>.secTwoLayout>.leftSide{
+    padding-left: 100px;
+    padding-bottom: 900px;
+}
+
+.secTwo>.secTwoLayout>.leftSide>p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+.secTwo>.secTwoLayout>.leftSide>p>span{
+    color: orange;
+}
+
+.secTwo>.secTwoLayout>.leftSide>.box{
+    font-weight: 600;
+    margin-top: 20px;
+    display: flex;
+    column-gap: 15px;
+}
+
+.secTwo>.secTwoLayout>.leftSide>.box>.box1{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+}
+
+.secTwo>.secTwoLayout>.leftSide>.box>.box2{
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    background-color: #333333;
+    color: white;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+}
+
+.secTwo>.secTwoLayout>.leftSide>.box>.box3{
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+}
+
+
+.secTwo>.secTwoLayout>.leftSide>.box>.box4{
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+}
+
+.secTwo>.secTwoLayout>.leftSide>.boxNext{
+    font-weight: 600;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.secTwo>.secTwoLayout>.leftSide>.boxNext>.box5{
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+}
+
+.secTwo>.secTwoLayout>.leftSide>.boxNext>.box6{
+    display: flex;
+    justify-content: center;
+    width: 190px;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+}
+
+.contactInfo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 19px;
+}
+
+.contactInfo>h3{
+    font-weight: 600;
+}
+
+.contactForm{
+    font-size: 12px;
+    font-family: 200;
+}
+
+.contactForm>.fullName{
+    padding-block: 15px;
+}
+
+.contactForm>.fullName>.line{
+    top: 7px;
+    width: 60%; 
+   height: 2px; 
+   background-color: #888787;
+   margin-top: 5px;
+   margin-left: 90px;
+   position: relative;
+   right: 90px;
+}
+
+.contactForm>.emailAddress{
+    padding-block: 15px;
+}
+
+.contactForm>.emailAddress>.line{
+    top: 7px;
+    width: 60%; 
+   height: 2px; 
+   background-color: #ccc;
+   margin-top: 5px;
+   margin-left: 90px;
+   position: relative;
+   right: 90px;
+}
+
+.contactForm>.projectDescription{
+    padding-block: 15px;
+}
+
+.contactForm>.projectDescription>.line{
+    top: 7px;
+    width: 60%; 
+   height: 2px; 
+   background-color: #ccc;
+   margin-top: 5px;
+   margin-left: 90px;
+   position: relative;
+   right: 90px;
+}
+
+.contactForm>.projectBudget{
+    padding-bottom: 15px;
+    padding-top: 23px;
+}
+
+
+.price{
+    font-weight: 600;
+    margin-top: 15px;
+    display: flex;
+    margin-right: 290px;
+    gap: 20px;
+}
+
+
+.price1{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+
+}
+
+.price2{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+}
+
+.price3{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+}
+
+.price4{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 8px;
+    border: 1.9px solid #000;
+    padding-block: 19px;
+}
+
+.secTwoLayout>button{
+    border: none;
+    color: white;
+    background-color: #fb7000;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    /* width: 120px; */
+    padding: 10px 40px 10px 40px;
+    margin-bottom: -170px;
+    position: relative;
+    right: 791px;
+}
+
+.secTwoLayout>.rightSide{
+    height: 100%;
+}
+
+.secThree{
+    width: 100%;
+    height: 109vh;
+    background-color: #f0f7ff;
+    position: relative;
+    top: 290px;
+}
+
+.officeLabel{
+    text-transform: capitalize;
+    display: flex;
+    font-size: 22px;
+    padding-top: 45px;
+    padding-bottom: 45px;   
+}
+
+.boxes{
+    display: flex;
+    max-width: 75%;
+}
+
+.boxLeft{
+    background-color: #ffffff;
+    color: #636974;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 30px 0px 40px 25px;
+    width: 498px;
+    border-radius: 10px;
+}
+
+.boxLeft>h4{
+    padding-block: 13px;
+}
+
+.boxLeft>p{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.boxLeft>.leftCover{
+    display: flex;
+    width: 400px;
+    gap: 40px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.leftCover>.leftPlace1{
+    display: flex;
+    align-items: center;
+}
+
+.leftCover>.leftPlace1>p{
+    font-weight: 600;
+}
+
+.leftCover>.leftPlace2>p{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.boxRight{
+    background-color: #ffffff;
+    color: #636974;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 30px 0px 40px 25px;
+    width: 498px;
+    border-radius: 10px;
+}
+
+.boxRight>h4{
+    padding-block: 13px;
+}
+
+.boxRight>p{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.boxRight>.rightCover{
+    display: flex;
+    width: 400px;
+    gap: 40px;
+    margin-top: 35px;
+    margin-bottom: 27px;
+}
+
+.rightCover>.rightPlace1>p{
+    font-weight: 600;
+}
+
+.rightCover>.rightPlace2>p{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.weeklyIns{
+    background-color: #333333;
+    color: #fff;
+    border-radius: 8px;
+    max-width: 85%;
+    margin-top: 40px;
+    margin-inline: auto;
+    padding: 40px 40px 40px 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.weeklyIns>.leftTxt>h2{
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.weeklyIns>.leftTxt>p{
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.weeklyIns>.leftTxt>button{
+    border: none;
+    background-color: #f87000;
+    color: white;
+    width: 149px;
+    height: 45px;
+    margin-top: 40px;
+    padding-block: 5px;
+}
+
+.weeklyIns>.rightImg{
+    height: 220px;
+    width: 390px;
+    margin-top: -30px;
+}
+
+footer{
+    background-color: #333333;
+    height: 58vh;
+    padding-top: 60px;
+}
+
