@@ -181,13 +181,15 @@ nav{
     font-weight: 600;
     margin-top: 20px;
     display: flex;
-    gap: 15px;
+    column-gap: 15px;
+    position: relative;
+    left: -60px;
 }
 
 .secTwo>.secTwoLayout>.leftSide>.boxNext>.box5{
     display: flex;
     justify-content: center;
-    width: 175px;
+    width: 250px;
     border-radius: 8px;
     border: 1.9px solid #000;
     padding-block: 19px;
@@ -196,10 +198,12 @@ nav{
 .secTwo>.secTwoLayout>.leftSide>.boxNext>.box6{
     display: flex;
     justify-content: center;
-    width: 190px;
+    width: 250px;
     border-radius: 8px;
     border: 1.9px solid #000;
     padding-block: 19px;
+    position: relative;
+    left: -115px;
 }
 
 .contactInfo{
@@ -337,7 +341,13 @@ nav{
 }
 
 .secTwoLayout>.rightSide{
-    height: 100%;
+    width: 100%;
+    height: 890px;
+    background-image: url(./images/RightSide.jpg);
+    /* background-size: cover; */
+    background-position: center;
+    position: relative;
+    left: -100px;
 }
 
 .secThree{
@@ -358,7 +368,7 @@ nav{
 
 .boxes{
     display: flex;
-    max-width: 75%;
+    max-width: 80%;
 }
 
 .boxLeft{
@@ -381,7 +391,7 @@ nav{
 }
 
 .boxLeft>.leftCover{
-    display: flex;
+    display: flex;  
     width: 400px;
     gap: 40px;
     margin-top: 35px;
@@ -397,9 +407,33 @@ nav{
     font-weight: 600;
 }
 
+.leftPlace1>img{
+    width: 25px;
+    height: 20px;
+    position: relative;
+    left: -25px;
+    top: 1px;
+}
+
+.rightPlace1>img{
+    width: 25px;
+    height: 20px;
+    position: relative;
+    left: -40px;
+    top: 25px;
+}
+
+.leftPlace2>i{
+    position: relative;
+    left: -40px;
+    top: 10px;
+}
+
 .leftCover>.leftPlace2>p{
     font-weight: 400;
     text-decoration: underline;
+    position: relative;
+    top: -10px;
 }
 
 .boxRight{
@@ -436,6 +470,12 @@ nav{
 .rightCover>.rightPlace2>p{
     font-weight: 400;
     text-decoration: underline;
+}
+
+.rightPlace2>i{
+    position: relative;
+    left: -40px;
+    top: 20px;
 }
 
 .weeklyIns{
@@ -478,7 +518,72 @@ nav{
 
 footer{
     background-color: #333333;
-    height: 58vh;
+    height: 100%;
     padding-top: 60px;
 }
 
+/* 
+footer>.footerLayout{
+    display: flex;
+    max-width: 85%;
+    margin: auto;
+    height: 300px;
+    gap: 70px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerLayout>.footer1{
+    margin-top: 20px;
+    width: 390px;
+    font-size: 14px;
+    color: #f0f7ff;
+}
+
+.footer1>.footerImg{
+    margin-bottom: 25px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    height: 66px;
+    width: 290px;
+}
+
+.footer2{
+    margin-top: 42px;
+    height: 190px
+}
+
+.footer3{
+    margin-left: 50px;
+    margin-top: 40px;
+    width: 340px; 
+}
+
+.footer3>h3{
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.footer3>.email{
+    margin-bottom: 10px;
+    padding-block: 5px;
+    padding-inline: 5px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 30px;
+    border: 2px solid #fff;
+}
+
+.footer3>.email>.arrow{
+    padding: 10px 25px 10px 25px;
+    border-radius: 30px;
+    background-color: #f87000;
+}
+
+.footer3>.emailContent{
+    color: #a5a5a5;
+    display: flex;
+    gap: 13px;
+} */
